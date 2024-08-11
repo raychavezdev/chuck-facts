@@ -8,7 +8,7 @@ const Fact = ({ category }) => {
     fetchFact()
   }, [])
   return (
-    <div className="s mt-4 flex h-[250px] w-full flex-col items-center justify-center gap-4">
+    <div className="s mt-4 flex h-[200px] w-full flex-col items-center justify-center gap-4 sm:h-[250px]">
       <div className="grid h-full w-full place-items-center overflow-auto rounded-md border border-black bg-slate-50/45 p-4">
         {loading && <p>Loading Fact...</p>}
         {error && <p>Error: {error}</p>}

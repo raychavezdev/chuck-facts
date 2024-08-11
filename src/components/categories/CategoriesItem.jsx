@@ -13,7 +13,7 @@ const CategoriesItem = ({ category, handleChange, isChecked }) => {
         value={category}
         checked={isChecked}
       />
-      <label htmlFor={category} className="cursor-pointer">
+      <label htmlFor={category} className="cursor-pointer text-sm sm:text-base">
         {category}
       </label>
     </li>
