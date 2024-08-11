@@ -1,0 +1,19 @@
+input[type='radio']:checked + label::after {
+  background-color: #2563eb;
+  border: 3px solid white;
+  outline: 2px solid #2563eb;
+}
+
+input[type='radio'] + label:after {
+  content: '';
+  position: absolute;
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 50%;
+  border: 1px solid rgb(102, 102, 102);
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background-color: white;
+  transition: border 0.1s;
+}
